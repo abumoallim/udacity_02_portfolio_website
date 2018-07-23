@@ -2,14 +2,7 @@
 /*font-family: 'Noto Sans', sans-serif;
 font-family: 'Poppins', sans-serif;*/
 
-@import url(http://weloveiconfonts.com/api/?family=brandico);
-
 body{
-  font-family: 'brandico', sans-serif;
-}
-
-/* zocial */
-[class*="brandico-"]:before {
   font-family: 'brandico', sans-serif;
 }
 
