@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Udacity Portfolio Website</title>
+    <!-- specifiying the encoding type used -->
+    <meta charset="UTF-8">
+    <!-- specifiying the description what this type is for -->
+    <meta name="description" content="Udacity portfolio website example">
+    <!-- this keywords helps in SEO -->
+    <meta name="keywords" content="Udacity,Protfolio,Nanodegree,Html,Css">
+    <!-- specifiying the author of this website -->
+    <meta name="author" content="Abubakker Moallim">
+    <!-- A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.
+    The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+    The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- linking external css -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- linking external responsive css for breakpoints -->
+    <link rel="stylesheet" href="css/responsive_600px.css" media="screen and (max-width: 600px)" />
+    <link rel="stylesheet" href="css/responsive_600px_900px.css" media="screen and (min-width: 601px) and (max-width: 900px)"
+    />
+    <link rel="stylesheet" href="css/responsive_900px.css" media="screen and (min-width: 900px)" />
+
+    <!-- linking external css for side social icon bar-->
+    <link rel="stylesheet" href="css/sticky_social_bar.css" />
+
+    <!-- linking external Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poppins" rel="stylesheet">
+
+    <!-- linking external icon fonts awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+
+    
+</head>
+
+<body>
+    <!-- The <header> element represents a container for introductory content or a set of navigational links. -->
+    <!-- class="header" speficies the Css selector for header -->
+    <header class="header">
+        <div class="header__inner">
+            <!-- with <picture> element you can dynamically fetch particular size image based on screen width with media queries 
+                for viewport having width <=600px small image will be fetched 
+                for viewport having width >600px & <900px medium image will be fetched
+                for viewport having width >900px large image will be fetched -->
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/udacity-small.png" />
+                <source media="(min-width: 601px) and (max-width: 900px)" srcset="images/udacity-medium.png" />
+                <source media="(min-width: 900px)" srcset="images/udacity-large_x2.png" />
+                <img src="images/udacity-small.png" class="header_logo" alt="Udacity logo" />
+            </picture>
+            <h1 class="header__title">
+                Abubakker Moallim
+            </h1>
+            <a id="menu" class="header__menu">
+                <!-- svg file for hamburger Icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" />
+                </svg>
+            </a>
+        </div>
+    </header>
+    <hr>
+
+    <!-- Navigation Drawer-->
+    <nav id="drawer" class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#about">About</a></li>
+            <li class="nav__item"><a href="#work">Work</a></li>
+        </ul>
+        <div class="nav__list__social">
+            <a href="https://www.facebook.com/aBu.mOAlliM" class="facebook"><i class="brandico-facebook-rect"></i></a>
+            <a href="https://www.linkedin.com/in/abubakker-moallim-17a23380/" class="linkedin"><i class="brandico-linkedin-rect"></i></a>
+            <a href="https://github.com/abumoallim/" class="github"><i class="brandico-github"></i></a>
+            <a href="https://stackoverflow.com/users/9113735/abubakker-moallim" class="stackoverflow"><i class="fab fa-stack-overflow"></i></a>
+        </div>
+    </nav>
+
+
+    <!-- The <main> tag specifies the main content of a document.
+        The content inside the <main> element should be unique to the document.
+             It should not contain any content that is repeated across documents such as sidebars, 
+             navigation links, copyright information, site logos, and search forms-->
+    <main class="main-container">
+        <div class="slideshow-container">
+            <div class="icon-bar">
+                <a href="https://www.facebook.com/aBu.mOAlliM" class="facebook"><i class="brandico-facebook-rect"></i></a>
+                <a href="https://www.linkedin.com/in/abubakker-moallim-17a23380/" class="linkedin"><i class="brandico-linkedin-rect"></i></a>
+                <a href="https://github.com/abumoallim/" class="github"><i class="brandico-github"></i></a>
+                <a href="https://stackoverflow.com/users/9113735/abubakker-moallim" class="stackoverflow"><i class="fab fa-stack-overflow"></i></a>
+
+            </div>
+            <div class="mySlides fade">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/back_2-small.jpg" />
+                    <source media="(min-width: 601px) and (max-width: 900px)" srcset="images/back_2-medium.jpg" />
+                    <source media="(min-width: 900px)" srcset="images/back_2-large_x2.jpg" />
+                    <img src="images/back_2-small.jpg" style="width:100%" alt="SlideshowImage 1 Of Port">
+                </picture>
+            </div>
+
+            <div class="mySlides fade">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/back_3-small.jpg" />
+                    <source media="(min-width: 601px) and (max-width: 900px)" srcset="images/back_3-medium.jpg" />
+                    <source media="(min-width: 900px)" srcset="images/back_3-large_x2.jpg" />
+                    <img src="images/back_3-small.jpg" style="width:100%" alt="SlideshowImage 2 Of some desert place">
+                </picture>
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <br>
+
+        <!-- The <article> tag specifies independent, self-contained content.
+            An article should make sense on its own and it should be possible to distribute 
+            it independently from the rest of the site.-->
+        <article id="about" class="about-us-container">
+            <h2 class="about-us-heading">About Me</h2>
+            <img src="images/my_image-small.jpg" class="about-us-image rotate270" alt="an image of mine">
+            <p class="about-us-content">A forward-thinking developer offering around 2 years of experience in building, integrating, testing and supporting
+                Android applications for mobile and tablet devices on the Android platform. Also did work with backend languages
+                like javascript and python.
+            </p>
+        </article>
+
+        <article id="work" class="work-container">
+            <h2 class="work-heading">Work</h2>
+            <div class="work-images-container">
+                <figure class="work-figure-1">
+                    <img src="images/work_1-medium.jpg" style="width:100%" alt="Link to Android Library on Github">
+                    <figcaption>An android library</figcaption>
+                </figure>
+                <figure class="work-figure-2">
+                    <img src="images/work_2-medium.jpg" style="width:100%" alt="Link to Android play store">
+                    <figcaption>An android application for a social service</figcaption>
+                </figure>
+                <figure class="work-figure-3">
+                    <img src="images/work_2-medium.jpg" style="width:100%" alt="Link to Android play store">
+                    <figcaption>An android application for a calculating daily expendses</figcaption>
+                </figure>
+            </div>
+        </article>
+    </main>
+
+    <!-- external script for navigation bar open and slideshow of images --> 
+    <script src="js/navigation_bar.js"></script> 
+    <script src="js/slideshow.js"></script>
+
+</body>
+
+</html>

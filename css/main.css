@@ -1,0 +1,164 @@
+
+/*font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+body{
+  font-family: 'brandico', sans-serif;
+}
+
+/* zocial */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+.header{
+  box-sizing: border-box;
+}
+
+.header_logo{
+  width: 20%;
+  max-width: 200px;
+  
+}
+
+.header__title{
+   font-family: 'Poppins', sans-serif;
+   font-size:calc(12px + 3vw);   
+   text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
+
+.header__menu{
+  display: inline-block;
+  width: 8%;
+  height: 8%;
+}
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+ .nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav_header{
+  height: 100%;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+.nav__list__social{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav__list__social a{
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  flex-grow: 1;
+  color: white;
+}
+
+/*
+About Me
+*/
+
+.about-us-container{
+  margin: 0;
+  padding: .3rem;
+  background-color: #eee;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.about-us-content{
+  margin-left: 20px;
+  font-size:calc(10px + 1vw);
+}
+.about-us-image{
+  float: right;
+  width: 20%;
+  margin: 10px;
+  vertical-align: text-top;
+}
+
+.about-us-heading{
+  margin-left: 10px;
+  font-size: calc(16px + 1vw);
+}
+.rotate270 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/*
+work
+*/
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 5px;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+.work-container{
+  clear:left;
+  width: 100%;
+  margin-top: 10px;
+  padding: .4rem;
+  background-color: #eee;
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+.work-heading{
+  margin-left: 10px;
+  font-size: calc(16px + 1vw);
+}

@@ -1,0 +1,65 @@
+/*This is responsive Css for viewport width >900px
+  Hide Humburgerm and Navigation list too
+  the main content will have margin and maximum width
+  and layout shifter will be applied to about us, slideshow container and work container
+*/
+
+.header__menu,.nav__list__social,.nav{
+    display: none;
+}
+
+main, .header__inner, .nav, .content , hr{
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+sliding image
+*/
+.slideshow-container{
+    width :84%;
+}
+
+/*
+about us
+*/
+.about-us-container{
+    order : -1;
+    width :15%;
+}
+
+.about-us-image{
+    float: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.about-us-content{
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*
+work
+*/
+.work-container{
+    order:2;
+    width: 100%;
+}
+
+.work-images-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-figure-1, .work-figure-2, .work-figure-3{
+    width: 32.4%;
+}
+

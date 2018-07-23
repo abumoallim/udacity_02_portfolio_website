@@ -1,0 +1,26 @@
+/*This is responsive Css for viewport width >600px to <900px
+  is this humburger icon will be gone and nav list will be below title
+  and work container will be having staggered grid layout
+*/
+
+.header__menu,.nav__list__social{
+    display: none;
+}
+
+/*
+work
+*/
+.work-images-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-figure-1, .work-figure-2{
+    width: 48%;
+    margin: auto;
+}
+
+.work-figure-3{
+    width: 100%;
+}
+

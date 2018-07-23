@@ -1,0 +1,77 @@
+/*This is responsive Css for viewport width < 600px 
+  Humburger icon will be shown
+  social bar and navigation list will be inside side bar
+  about us image will be float left
+*/
+
+/*
+Header
+*/
+.header__menu {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+.header__menu svg {
+  width: 32px;
+  fill: #E0E0E0;
+} 
+
+
+/*
+Side bar Navigation
+*/
+.nav_header__logo {
+  height: 48px;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+.nav_header__title {
+  margin-left: 10px;
+  font-size: 2em;
+  vertical-align: bottom; 
+}
+
+.nav {
+  z-index: 10;
+  background-color: #fff;
+  width: 300px;
+  position: absolute;
+  /* This trasform moves the drawer off canvas. */
+  -webkit-transform: translate(-300px, 0);
+  transform: translate(-300px, 0);
+  /* Optionally, we animate the drawer. */
+  transition: transform 0.3s ease;
+}
+.nav.open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.nav__item {
+  display: list-item;
+  border-bottom: 1px solid #E0E0E0;
+  width: 100%;
+  text-align: left;
+}
+
+
+/*
+about us
+*/
+.about-us-image{
+  float: left;
+  width: 40%;
+  margin-top: 10px;
+}
+
+.about-us-content{
+  margin-right: 10px;
+}
+
+/*
+sticky social bar will be hidden
+*/
+.icon-bar{
+  display: none;  
+}
