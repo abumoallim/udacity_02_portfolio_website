@@ -4,7 +4,7 @@
 Portfolio website project, part of the Udacity [Full Stack Web Developer
 Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004).
 
-[Live Demo](https://abumoallim.github.io/udacity_02_portfolio_website/index.html)
+[Live Demo](https://abumoallim.github.io/udacity_02_portfolio_website/)
 
 ## What it is and does
 
