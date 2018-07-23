@@ -11,9 +11,10 @@ body{
 }
 
 .header_logo{
-  width: 20%;
+  width: 10%;
+  min-width: 36px;
   max-width: 200px;
-  
+  margin-top: 15px;
 }
 
 .header__title{
@@ -22,7 +23,6 @@ body{
    text-align: right;
     display: inline-block;
     vertical-align: top;
-    margin: 10px;
 }
 
 .header__menu{

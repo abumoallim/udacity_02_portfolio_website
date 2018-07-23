@@ -20,6 +20,20 @@ main, .header__inner, .nav, .content , hr{
 }
 
 /*
+header
+*/
+.header__title{
+    font-family: 'Poppins', sans-serif;
+    font-size:calc(12px + 3vw);   
+    text-align: right;
+     display: inline-block;
+     vertical-align: top;
+     position: absolute;
+     right: 0;
+     margin-right: 10%;
+ }
+
+/*
 sliding image
 */
 .slideshow-container{

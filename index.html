@@ -42,16 +42,7 @@
     <!-- class="header" speficies the Css selector for header -->
     <header class="header">
         <div class="header__inner">
-            <!-- with <picture> element you can dynamically fetch particular size image based on screen width with media queries 
-                for viewport having width <=600px small image will be fetched 
-                for viewport having width >600px & <900px medium image will be fetched
-                for viewport having width >900px large image will be fetched -->
-            <picture>
-                <source media="(max-width: 600px)" srcset="images/udacity-small.png" />
-                <source media="(min-width: 601px) and (max-width: 900px)" srcset="images/udacity-medium.png" />
-                <source media="(min-width: 900px)" srcset="images/udacity-large_x2.png" />
-                <img src="images/udacity-small.png" class="header_logo" alt="Udacity logo" />
-            </picture>
+            <img src="images/udacity-small.png" class="header_logo" alt="Udacity logo" />
             <h1 class="header__title">
                 Abubakker Moallim
             </h1>
@@ -94,6 +85,10 @@
 
             </div>
             <div class="mySlides fade">
+                <!-- with <picture> element you can dynamically fetch particular size image based on screen width with media queries 
+                for viewport having width <=600px small image will be fetched 
+                for viewport having width >600px & <900px medium image will be fetched
+                for viewport having width >900px large image will be fetched -->
                 <picture>
                     <source media="(max-width: 600px)" srcset="images/back_2-small.jpg" />
                     <source media="(min-width: 601px) and (max-width: 900px)" srcset="images/back_2-medium.jpg" />
