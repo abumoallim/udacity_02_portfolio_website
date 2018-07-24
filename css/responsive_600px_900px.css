@@ -3,7 +3,8 @@
   and work container will be having staggered grid layout
 */
 
-.header__menu,.nav__list__social{
+.header__menu,
+.nav__list__social{
     display: none;
 }
 
@@ -15,7 +16,8 @@ work
     flex-wrap: wrap;
 }
 
-.work-figure-1, .work-figure-2{
+.work-figure-1, 
+.work-figure-2{
     width: 48%;
     margin: auto;
 }

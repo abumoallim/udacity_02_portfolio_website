@@ -4,12 +4,18 @@
   and layout shifter will be applied to about us, slideshow container and work container
 */
 
-.header__menu,.nav__list__social,.nav{
+.header__menu,
+.nav__list__social,
+.nav{
     display: none;
 }
 
-main, .header__inner, .nav, .content , hr{
-    width: 1300px;
+main, 
+.header__inner, 
+.nav, 
+.content , 
+hr{
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,15 +28,19 @@ main, .header__inner, .nav, .content , hr{
 /*
 header
 */
+
+.header__inner{
+    position: relative;
+}
+
 .header__title{
     font-family: 'Poppins', sans-serif;
     font-size:calc(12px + 3vw);   
     text-align: right;
-     display: inline-block;
-     vertical-align: top;
-     position: absolute;
-     right: 0;
-     margin-right: 10%;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
  }
 
 /*
@@ -56,8 +66,9 @@ about us
 
 .about-us-content{
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 1em;
     text-align: justify;
+    margin-top: 40px;
 }
 
 /*
@@ -73,7 +84,9 @@ work
     flex-wrap: wrap;
 }
 
-.work-figure-1, .work-figure-2, .work-figure-3{
-    width: 32.4%;
+.work-figure-1, 
+.work-figure-2, 
+.work-figure-3{
+    width: 32%;
 }
 

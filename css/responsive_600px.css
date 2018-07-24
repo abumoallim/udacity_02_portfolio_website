@@ -13,6 +13,7 @@ Header
   right: 0;
   padding: 1em;
 }
+
 .header__menu svg {
   width: 32px;
   fill: #E0E0E0;
@@ -27,6 +28,7 @@ Side bar Navigation
   margin-right: 1em;
   margin-top: 1em;
 }
+
 .nav_header__title {
   margin-left: 10px;
   font-size: 2em;
@@ -44,10 +46,12 @@ Side bar Navigation
   /* Optionally, we animate the drawer. */
   transition: transform 0.3s ease;
 }
+
 .nav.open {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
+
 .nav__item {
   display: list-item;
   border-bottom: 1px solid #E0E0E0;
