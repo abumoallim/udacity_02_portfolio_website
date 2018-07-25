@@ -26,3 +26,19 @@ work
     width: 100%;
 }
 
+/*
+about us
+*/
+.about-us-container{
+    display: inline-block;
+}
+  
+.about-us-image{
+    float: right;
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.about-us-content{
+    font-size: 1.2em;
+}

@@ -63,10 +63,14 @@ Side bar Navigation
 /*
 about us
 */
+.about-us-container{
+  display: inline-block;
+}
+
 .about-us-image{
   float: left;
-  width: 40%;
-  margin-top: 10px;
+  width: 25%;
+  margin-bottom: 30px;
 }
 
 .about-us-content{
